@@ -1,15 +1,16 @@
 ﻿import numpy as np
 
+
 class UctNode:
     def __init__(self):
-        self.move_count = 0           # ノードの訪問回数
-        self.sum_value = 0.0          # 勝率の合計
-        self.child_move = None        # 子ノードの指し手(リスト)
+        self.move_count = 0  # ノードの訪問回数
+        self.sum_value = 0.0  # 勝率の合計
+        self.child_move = None  # 子ノードの指し手(リスト)
         self.child_move_count = None  # 子ノードの訪問回数(ndarray)
-        self.child_sum_value = None   # 子ノードの勝率の合計(ndarray)
-        self.child_node = None        # 子ノード(リスト)
-        self.policy = None            # 方策ネットワークの予測確率(ndarray)
-        self.value = None             # 価値
+        self.child_sum_value = None  # 子ノードの勝率の合計(ndarray)
+        self.child_node = None  # 子ノード(リスト)
+        self.policy = None  # 方策ネットワークの予測確率(ndarray)
+        self.value = None  # 価値
 
     # 子ノード作成
     def create_child_node(self, index):
@@ -49,6 +50,7 @@ class UctNode:
         # 子ノードのリストを初期化する
         self.child_node = [UctNode()]
         return self.child_node[0]
+
 
 class NodeTree:
     def __init__(self):
