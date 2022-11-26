@@ -8,3 +8,7 @@ conda install pytorch cudatoolkit=11.1 -c pytorch-lts -c nvidia
 conda install ipython
 pip install cshogi
 ```
+
+## 
+
+https://github.com/TadaoYamaoka/python-dlshogi2
