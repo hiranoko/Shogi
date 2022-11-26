@@ -5,12 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import torch
 from cshogi import Board, HuffmanCodedPosAndEval
-from pydlshogi2.features import (
-    FEATURES_NUM,
-    make_input_features,
-    make_move_label,
-    make_result,
-)
+from features import FEATURES_NUM, make_input_features, make_move_label, make_result
 
 
 class HcpeDataLoader:

@@ -3,8 +3,8 @@ import logging
 
 import torch
 import torch.optim as optim
-from pydlshogi2.dataloader import HcpeDataLoader
-from pydlshogi2.network.policy_value_resnet import PolicyValueNetwork
+from dataloader import HcpeDataLoader
+from network.policy_value_resnet import PolicyValueNetwork
 
 parser = argparse.ArgumentParser(description="Train policy value network")
 parser.add_argument("train_data", type=str, nargs="+", help="training data file")

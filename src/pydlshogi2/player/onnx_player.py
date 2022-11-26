@@ -6,7 +6,7 @@ from cshogi.dlshogi import (
     make_input_features,
     make_move_label,
 )
-from pydlshogi2.player.mcts_player import MCTSPlayer
+from player.mcts_player import MCTSPlayer
 
 
 class OnnxPlayer(MCTSPlayer):

@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from pydlshogi2.features import FEATURES_NUM, MOVE_LABELS_NUM, MOVE_PLANES_NUM
+from features import FEATURES_NUM, MOVE_LABELS_NUM, MOVE_PLANES_NUM
 
 
 class Bias(nn.Module):

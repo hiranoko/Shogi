@@ -12,10 +12,10 @@ from cshogi import (
     Board,
     move_to_usi,
 )
-from pydlshogi2.features import FEATURES_NUM, make_input_features, make_move_label
-from pydlshogi2.network.policy_value_resnet import PolicyValueNetwork
-from pydlshogi2.player.base_player import BasePlayer
-from pydlshogi2.uct.uct_node import NodeTree
+from features import FEATURES_NUM, make_input_features, make_move_label
+from network.policy_value_resnet import PolicyValueNetwork
+from player.base_player import BasePlayer
+from uct.uct_node import NodeTree
 
 # デフォルトGPU ID
 DEFAULT_GPU_ID = 0
